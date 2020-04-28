@@ -2,47 +2,153 @@
 <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Interactive GP datasets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About this website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div id="main">
-    
-    <a href="index.html"><img src="images/uc_logo.png" style="width:20%;float:left;margin:5px;padding:5px;"></a>
-    <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://github.com/J0vid"><img src="images/github2.png" style="width:20px;"></a></li>
-        <li><a href="https://mccaig.ucalgary.ca/">McCaig</a></li>
-        <li><a href="https://www.ucalgary.ca/morpho/">Hallgrimsson lab</a></li>
-    </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top" style="background-color: #a6192e; opacity:.98;height: 7vh;">
 
-        <br><br><br><br><br>
-    <p></p>
+        <a class="navbar-brand" href="index.html"><img src="images/uc_logo.png" style="width:116px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon navbar-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto" style="background-color: #a6192e;">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.ucalgary.ca/morpho/">Hallgrimsson lab</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://mccaig.ucalgary.ca/">McCaig</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/J0vid"><img src="images/github2.png" style="width:20px;"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a></li>
 
-    
+            </ul>
+        </div>
 
-    <footer>
-        <br><hr>
-        <p style="float: right"><small>Created by <a href="https://www.ucalgary.ca/morpho/personnel">J. David Aponte</a>.</small></p>
-        </footer>
-        
+    </nav>
+
+
+    <!--- About -->
+    <div class="container">
+        <div class="row welcome text-left">
+            <div class="col-12">
+                <h2>About this project</h2>
+                <hr class="dark">
+            </div>
+        </div>
+        <div class="col-12">
+            <p>This webpage is part of a multi-lab collaboration to leverage the data that we've collected across many projects. Think of it like interactive supplemental material.</p>
+            <p>High-dimensional data are uniquely challenging to work with. There are more things to see in some datasets than any one person has time for. People are also interested in a diverse array of different questions.</p>
+            <p>The goal of this site is to allow you to pursue your individual interests. Learn how similar craniofacial syndromes differ. See what your favorite developmental pathway does to the shape of the face. Play with our syndrome classifier. It's up to you.</p>
+            <p>If you're curious about the underlying technology this site runs on, visit my <a href="https://github.com/J0vid">github page</a>. Even the code for this site is up there.</p>
+        </div>
+
+        <div class="row welcome text-left">
+            <div class="col-12">
+                <h2>Contributors</h2>
+                <hr class="dark">
+            </div>
+        </div>
+        <center>
+            <div class="col-12">
+                <div class="row row-eq-height padding">
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-hover-zoom">
+                                <img class="card-img-top" src="images/jovid.jpeg" alt="Why are the images broken?">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>David Aponte</b></h5>
+                                <p class="card-text">Associated projects: A little bit of everything, a lot of most things.</p>
+                                <a href="https://www.ucalgary.ca/morpho/personnel" class="btn btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-hover-zoom">
+                                <img class="card-img-top" src="images/Process_MGP2.png" alt="Why are the images broken?">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Michelle Leong</b></h5>
+                                <p class="card-text">Associated projects: B9D1</p>
+                                <a href="https://www.ucalgary.ca/morpho/personnel" class="btn btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-hover-zoom">
+                                <img class="card-img-top" src="images/Process_MGP2.png" alt="Why are the images broken?">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Rebecca Green</b></h5>
+                                <p class="card-text">Associated projects: B9D1</p>
+                                <a href="https://www.ucalgary.ca/morpho/personnel" class="btn btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-hover-zoom">
+                                <img class="card-img-top" src="images/Process_MGP2.png" alt="Why are the images broken?">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>David Katz</b></h5>
+                                <p class="card-text">Associated projects: MGP, Syndrome Gestalts, Syndrome Classification</p>
+                                <a href="https://www.ucalgary.ca/morpho/personnel" class="btn btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-hover-zoom">
+                                <img class="card-img-top" src="images/Process_MGP2.png" alt="Why are the images broken?">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Harry Matthews</b></h5>
+                                <p class="card-text">Associated project: Syndrome gestalts</p>
+                                <a href="https://www.kuleuven.be/wieiswie/en/person/00127693" class="btn btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </center>
+
+
     </div>
 
-</body></html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    <footer>
+        <br>
+        <hr>
+        <p style="float: right"><small>Created by <a href="https://www.ucalgary.ca/morpho/personnel">J. David Aponte</a></small></p>
+    </footer>
+
+
+
+</body>
+
+</html>

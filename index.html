@@ -27,117 +27,60 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top" style="background-color: #a6192e; opacity:.98;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="images/uc_logo.png" style="width:116px;height: 30px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon navbar-light"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.ucalgary.ca/morpho/">Hallgrimsson lab</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mccaig.ucalgary.ca/">McCaig</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/J0vid"><img src="images/github2.png" style="width:20px;"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a></li>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top" style="background-color: #a6192e; opacity:.98;height: 6.5vh;">
 
-                </ul>
-            </div>
+        <a class="navbar-brand" href="#"><img src="images/uc_logo.png" style="width:116px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon navbar-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto"  style="background-color: #a6192e;">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.ucalgary.ca/morpho/">Hallgrimsson lab</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://mccaig.ucalgary.ca/">McCaig</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/J0vid"><img src="images/github2.png" style="width:20px;"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a></li>
+
+            </ul>
         </div>
+
     </nav>
 
 
+    <div class="wrapper">
+        <div class="container-fluid" style="background-color: #a6192e; opacity:.98; max-width: 1400px;">
 
-    <!--- Image Slider -->
+            <div class="row row-eq-height padding align-items-center">
 
-    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="10000">
+                <div id="bannerimage" class="col-md-6 mt-5">
+                    <center>
+                        <img src="images/face.png" alt="banner" , style="width: 100%;">
+                        <!--                        <iframe style="width: 100%; height: 100%" frameBorder="0" src="https://genopheno.ucalgary.ca/presentations/Child_health_data_science_Aponte/DA_achondroplasia.html"></iframe>-->
 
-        <ol class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0" class="active"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <img class="d-block w-100" src="images/banner11.png" alt="First slide">
-                    <div class="carousel-caption">
-                        <h2 class="display-2" style="color:black;">Interactive G-p data</h2>
-                        <button type="button" class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#site_explainer">About this site</button>
-                    </div>
-                    <div class="collapse" , id="site_explainer">
-                        <div class="overlay">
-                            <center style="padding: 1em;">
-                                <p>High-dimensional data are uniquely challenging to work with. There are more things to see in some datasets than any one person has time for. People are also interested in a diverse array of different questions.</p>
-                                <p>The goal of this site is to allow you to pursue your individual interests. Learn how similar craniofacial syndromes differ. See what your favorite developmental pathway does to the shape of the face. Play with our syndrome classifier. It's up to you.</p>
-                                <p>If you're curious about the underlying technology this site runs on, visit my github page. Even the code for this site is up there.</p>
-<p>Some of these apps aren't quite here yet as we're still figuring out the best way to present the data.</p>                                
-<button type="button" class="btn-overlay btn-outline-dark" data-toggle="collapse" data-target="#site_explainer">Close</button>
-                            </center>
-                        </div>
-                    </div>
+
+                    </center>
+                </div>
+
+                <div id="bannertitle" class="col-md-6 mt-5">
+
+                    <h1 style="color:white;"><b>Interactive<br> genotype & <br>phenotype <br> data</b></h1>
+
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <img class="d-block w-100" src="images/banner10.png" alt="Second slide">
-                    <div class="carousel-caption">
-                        <div class="blurred_background"></div>
-                        <h2 class="display-2" style="color:black;">G-p maps</h2>
-                        <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#MGP_explainer">Read more</a>
-                        <a href="./MGP" class="btn btn-outline-secondary">Try it out</a>
-                    </div>
-                    <div class="collapse" , id="MGP_explainer">
-                        <div class="overlay" style="font-size:1.13vw;">
-                            <center style="padding: 1em;">
-                                <p>This app accompanies a paper all about the importance of development. We know that complex traits are structured by development, yet genomics seldom quantifies the importance of developmental pathways. That's what this app is all about.</p>
-                                <p>Type some process you're interested in and you'll see what GO terms are listed under that process. From there, pick GO terms that you find interesting and we'll do the analysis right there and show you how alleles in our mouse sample covary with the shape of the face.</p>
-                                <p>After you do all that, you can compare your pathway effect to any mutant in our database.</p>
-                                <p>If you like what you've seen, click the "send me a report" button and all the results will be sent to you, including the manipulable 3D mouse cranium plot.</p>
-                                <button type="button" class="btn-overlay btn-outline-dark" data-toggle="collapse" data-target="#MGP_explainer">Close</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <img class="d-block w-100" src="images/banner3.png" alt="Third slide">
-                    <div class="carousel-caption">
-                        <h2 class="display-2" style="color:black;">syndrome heterogeneity</h2>
-                        <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#het_explainer">Read more</a>
-                        <a href="./Syndrome_gestalts" class="btn btn-outline-secondary">Try it out</a>
-                    </div>
-                    <div class="collapse" , id="het_explainer">
-                        <div class="overlay" style="font-size:1.25vw;">
-                            <center style="padding: 1em;">
-                                <p>Craniofacial syndromes often have distinct effects on the face. Many papers have shown the phenotype of different syndromes.</p>
-                                <p>We don't often see how heterogeneous these syndromes are. In fact, the mean change in face shape is disproportionately small compared to the change in the variance for most syndromes.</p>
-                                <p>This suggests that most syndromes don't break down development, but just mess it up a bit. You can read about this work in our forthcoming paper.</p>
-                                <button type="button" class="btn-overlay btn-outline-dark" data-toggle="collapse" data-target="#het_explainer">Close</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
         </div>
-
     </div>
+
 
     <!--- More apps -->
     <div class="container">
         <div class="row welcome text-center">
             <div class="col-12">
-                <h2 style="font-size: 4.5vw">App gallery</h2>
+                <p id="appgal">App gallery</p>
                 <hr class="dark">
             </div>
         </div>
@@ -146,6 +89,67 @@
     <!--- Cards -->
     <div class="container">
         <div class="row row-eq-height padding">
+
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img-top" src="images/mgp_card2.png">
+                        <div class="overlay-text">
+                            <span>
+                                <p>This app accompanies a paper all about the importance of development. We know that complex traits are structured by development, yet genomics seldom quantifies the importance of developmental pathways. That's what this app is all about.</p>
+                                <p>Type some process you're interested in and you'll see what GO terms are listed under that process. From there, pick GO terms that you find interesting and we'll do the analysis right there and show you how alleles in our mouse sample covary with the shape of the face.</p>
+                                <p>After you do all that, you can compare your pathway effect to any mutant in our database.</p>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Process GP maps</h4>
+                        <!--                        <button class="btn btn-primary" onclick="readmore(this)">Read more</button>-->
+                        <a href="./MGP" class="btn btn-outline-secondary">Launch app</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img-top" src="images/classification_card2.png">
+                        <div class="overlay-text">
+                            <span>
+                                <p>This is a demonstration of our syndrome classifier with a few example faces. The app currently takes an already measured face and feeds it through the classifier. The result is the relative confidence of syndrome scores.</p>
+                                <p>You can compare the individual's face to the mean of any syndrome to get a sense for how morphologically similar they are to the syndromes the classifier suggests.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syndrome classification</h4>
+                        <!--                        <a href="#" class="btn btn-primary">Read more</a>-->
+                        <a href="./Classification_demo" class="btn btn-outline-secondary">Launch app</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img-top" src="images/gestalt_dark_card.png">
+                        <div class="overlay-text">
+                            <span>
+                                <p>This app allows you to compare the morphology of a select subset of syndromes in our database. The differences are represented as heatmaps, with hot colors denoting larger areas and cold colors denoting smaller areas.</p>
+                                <p>Additionally, you can compare the mean of the reference syndrome to the shape of 10 individuals of the target syndrome to get a sense for the heterogeneity in the target syndrome.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syndrome Gestalts</h4>
+                        <!--                        <a href="#" class="btn btn-primary">Read more</a>-->
+                        <a href="./Syndrome_gestalts" class="btn btn-outline-secondary">Launch app</a>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="col-md-6 mt-4">
                 <div class="card">
@@ -166,66 +170,6 @@
                 </div>
             </div>
 
-            <div class="col-md-6 mt-4">
-                <div class="card">
-                    <div class="img-container">
-                        <img class="card-img-top" src="images/gestalt_dark_card.png">
-                        <div class="overlay-text">
-                            <span>
-                                <p>This app allows you to compare the morphology of a select subset of syndromes in our database. The differences are represented as heatmaps, with hot colors denoting larger areas and cold colors denoting smaller areas.</p>
-                                <p>Additionally, you can compare the mean of the reference syndrome to the shape of 10 individuals of the target syndrome to get a sense for the heterogeneity in the target syndrome.</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Compare Syndrome Gestalts</h4>
-                        <!--                        <a href="#" class="btn btn-primary">Read more</a>-->
-                        <a href="./Syndrome_gestalts" class="btn btn-outline-secondary">Launch app</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mt-4">
-                <div class="card">
-                    <div class="img-container">
-                        <img class="card-img-top" src="images/syndrome_card.png">
-                        <div class="overlay-text">
-                            <span>
-                                <p>This is a demonstration of our syndrome classifier with a few example faces. The app currently takes an already measured face and feeds it through the classifier. The result is the relative confidence of syndrome scores.</p>
-                                <p>You can compare the individual's face to the mean of any syndrome to get a sense for how morphologically similar they are to the syndromes the classifier suggests.</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Syndrome classification</h4>
-                        <!--                        <a href="#" class="btn btn-primary">Read more</a>-->
-                        <a href="./Classification_demo" class="btn btn-outline-secondary">Launch app</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mt-4">
-                <div class="card">
-                    <div class="img-container">
-                        <img class="card-img-top" src="images/mgp_card.png">
-                        <div class="overlay-text">
-                            <span>
-                                <p>This app accompanies a paper all about the importance of development. We know that complex traits are structured by development, yet genomics seldom quantifies the importance of developmental pathways. That's what this app is all about.</p>
-                                <p>Type some process you're interested in and you'll see what GO terms are listed under that process. From there, pick GO terms that you find interesting and we'll do the analysis right there and show you how alleles in our mouse sample covary with the shape of the face.</p>
-                                <p>After you do all that, you can compare your pathway effect to any mutant in our database.</p>
-
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Process GP maps</h4>
-                        <!--                        <button class="btn btn-primary" onclick="readmore(this)">Read more</button>-->
-                        <a href="./MGP" class="btn btn-outline-secondary">Launch app</a>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
     </div>
 
@@ -234,20 +178,17 @@
         $(".img-container").on('click', function() {
             $(this).children(".overlay-text").toggleClass("show");
         });
+
     </script>
 
+</body>
 
-
-
-
-
-
-</body></html>
+</html>
 
 
 
 
 <!--- footer -->
 <div style="position: absolute; bottom: 0; right: 0; margin-bottom: -50px; z-index: 100;">
-    <p style="float: right"><small>Created by <a href="https://www.ucalgary.ca/morpho/personnel">J. David Aponte</a>.</small></p>
+    <p style="float: right"><small>Created by <a href="https://www.ucalgary.ca/morpho/personnel">J. David Aponte</a></small></p>
 </div>

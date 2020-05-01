@@ -77,6 +77,9 @@ a:hover {
     margin-bottom: 30px;
 }
 
+
+
+
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
 .card-container.hover.manual-flip .card {
@@ -178,7 +181,7 @@ img {
 
 
 .img-hover-zoom {
-
+    max-height: 350px;
     overflow: hidden;
     /* [1.2] Hide the overflowing of child elements */
 }
@@ -220,6 +223,10 @@ img {
     h1 {
         font-size: 4vw;
     }
+    
+    .card-text {
+    font-size: .95vw;
+}
 }
 
 
@@ -249,6 +256,10 @@ img {
     .btn {
         font-size: 1.5vw;
     }
+    
+    .card-text {
+    font-size: 1.3vw;
+}
 }
 
 
@@ -260,7 +271,7 @@ img {
         left: 10%;
         transform: translate(-10%, -10%);
         color: black;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 
     #appgal {
@@ -279,6 +290,10 @@ img {
     .btn {
         font-size: 1.7vw;
     }
+    
+    .card-text {
+    font-size: 1.6vw;
+}
 
 }
 
@@ -323,6 +338,10 @@ img {
     .btn {
         font-size: 2.2vw;
     }
+    
+    .card-text {
+    font-size: 3vw;
+}
 }
 
 @media (max-width: 576px) {
@@ -365,6 +384,10 @@ img {
     .btn {
         font-size: 3vw;
     }
+    
+    .card-text {
+    font-size: 4vw;
+}
 }
 
 /*---Firefox Bug Fix --*/

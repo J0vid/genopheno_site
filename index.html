@@ -87,7 +87,7 @@
                                 const random = Math.floor(Math.random() * mesh_assets.length);
                                 console.log(random, mesh_assets[random]);
 
-                                BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/J0vid/genopheno_site/master/", mesh_assets[random], scene, function (meshes) {
+                                BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/J0vid/genopheno_site/main/images/mesh_assets/", mesh_assets[random], scene, function (meshes) {
                                 meshes[1].material.pointsCloud = true;
                                 meshes[1].material.wireframe = true;
                                 meshes[1].useVertexColors = false;
